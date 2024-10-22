@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <title>Tamilselvan-Portfolio</title>
+    <link rel="icon" href="Tamiselvan_P_Image.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="m-1 p-2 container-fluid">
+            <div>
+                <h5 class="name p-2">Tamilselvan</h5>
+            </div>
+            <div class="nav-right">
+                <a href="#about" class="about">About</a>
+                <a href="#projects" class="about">Projects</a>
+                <a href="#contacts" class="nav-contact">Contact</a>
+            </div>
+            <div class="col" id="menu-icon">
+                <i class="bi bi-list" id="menu-icon-content" onclick="showmenu()"></i>
+                <i class="bi bi-x" id="close-icon"  onclick="showmenu()"></i>
+            </div>
+        </nav>
+        <div class="container-fluid" id="menu-content">
+            <div class="d-flex align-items-center justify-content-center flex-column">
+                <a href="#about" class="about">About</a>
+                <a href="#projects" class="about">Projects</a>
+                <a href="#contacts" class="nav-contact">Contact</a>
+            </div>
+        </div>
+    </header>
+    <section class="intro container-fluid text-center" id="about">
+        <div class="row align-items-end">
+            <div class="col intro-col">
+                <img src="Tamiselvan_P_Image.jpg" alt="Tamilselvan-image">
+                <p class="tamil">Tamilselvan P</p>
+                <!-- 24. Floating Image --  https://blog.hubspot.com/website/css-animation-examples  -->
+                <p class="desc">Aspiring software developer currently pursuing a Python Full Stack Developer course at
+                    Besant Technologies</p>
+            </div>
+        </div>
+    </section>
+    <section class="Skills" id="skills">
+        <div class="container d-flex justify-content-center text-light">
+            <div class="row">
+                <div class="col">
+                    <h1>SKILLS</h1>
+                </div>
+            </div>
+        </div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- First slide with text content instead of image -->
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                        <div class="container text-center first-slide-cont slide-cont">
+                            <div class="row justify-content-center">
+                                <div class="col align-self-start">
+                                    <h2>HTML / CSS / SCSS</h2>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col align-self-center">
+                                        <h2>Bootstrap</h2>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col align-self-end">
+                                        <h2>JavaScript</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Web Development Technologies</h5>
+                        <p>Creating user-friendly web experiences</p>
+                    </div>
+                </div>
+                <!-- Second slide -->
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                        <div class="container text-center slide-cont">
+                            <div class="row justify-content-center">
+                                <div class="col align-self-start heading">
+                                    <h2>Python</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Programming Language</h5>
+                        <p>Innovating solutions for real-world challenges</p>
+                    </div>
+                </div>
+                <!-- Third slide -->
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                        <div class="container text-center slide-cont">
+                            <div class="row justify-content-center">
+                                <div class="col align-self-start heading">
+                                    <h2>MySql</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Database Management</h5>
+                            <p>Optimizing data processes for better performance</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </section>
+    <section class="Projects" id="projects">
+        <div class="d-flex justify-content-center text-dark heading">
+            <h1>PROJECTS</h1>
+        </div>
+        <div class="Project-1">
+            <img src="Python offline chatbot.png" alt="Python-chatbot-image" class="Python-offline-img">
+            <div class="Project-desc">
+                <h4>Chatbot-A Python Assistant</h4>
+                <p class="d-none d-sm-block">Python offline chatbot using HTML, CSS, and JavaScript</p>
+                <p class="d-none d-sm-block">Keyword-Based Responses</p>
+                <p class="d-none d-sm-block">January - April 2023</p>
+                <a href="https://github.com/tamilselvan0910/Python-Chatbot" class="website border-0 p-1">Git-Hub</a>
+
+            </div>
+        </div>
+        <div class="Project-1">
+            <img src="to-do-list-1.png" alt="Prototype-image" class="to-do-list-img">
+            <div class="Project-desc">
+                <h4>TO-DO List</h4>
+                <p class="d-none d-sm-block">TO-DO List using HTML, CSS, Python, MySQL, and CGI</p>
+                <p class="d-none d-sm-block">Allows users to add, view, complete, and delete tasks</p>
+                <p class="d-none d-sm-block">August - September 2024</p>
+                <a href="https://github.com/tamilselvan0910/TO-DO_List" class="website border-0 p-1">Git-Hub</a>
+            </div>
+        </div>
+    </section>
+    <section class="Education">
+        <div class="d-flex justify-content-center text-dark heading">
+            <h1>EDUCATION</h1>
+        </div>
+        <!-- card start -->
+        <div class="row row-cols-1 row-cols-md-2 g-4 education-card">
+            <div class="col education-col">
+                <div class="card">
+                    <h2 class="card-img-top">UG</h2>
+                    <div class="card-body">
+                        <h5 class="card-title">Government College of Engineering - Bodinayakkanur</h5>
+                        <p class="card-text">CGPA – 7.5</p>
+                        <p class="card-text"><small class="text-body-secondary">2020–2024</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col education-col">
+                <div class="card">
+                    <h2 class="card-img-top">HSC</h2>
+                    <div class="card-body">
+                        <h5 class="card-title">G.V Higher Secondary School - Mettur</h5>
+                        <p class="card-text">Percentage - 71.16%</p>
+                        <p class="card-text"><small class="text-body-secondary">2019–2020</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col  education-col">
+                <div class="card">
+                    <h2 class="card-img-top">SSLC</h2>
+                    <div class="card-body">
+                        <h5 class="card-title">Vivekanandha Kalvi Nilayam Matric School - Mettur</h5>
+                        <p class="card-text">Percentage - 81.4%</p>
+                        <p class="card-text"><small class="text-body-secondary">2017–2018</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card end -->
+    </section>
+
+    <section class="contact container-fluid" id="contacts">
+        <div class="row row-cols-1 row-cols-md-2 m-4 mt-6 contact-row">
+
+            <div class="col ">
+                <h1>Let's Create Something exciting!</h1>
+                <div class="animation-div d-none d-md-block"></div>
+            </div>
+            <div class="col">
+                <form>
+                    <fieldset class="container-fluid">
+                        <label class="row" for="Name">Name</label>
+                        <input class="row" type="text" placeholder="Jane Smith">
+                    </fieldset>
+                    <fieldset class="container-fluid">
+                        <label class="row" for="email">Email</label>
+                        <input class="row" type="email" placeholder="jane@gmail.com">
+                    </fieldset>
+                    <fieldset class="container-fluid">
+                        <label class="row" for="Mobile">Mobile Number</label>
+                        <input class="row" type="number" placeholder="9876543210">
+                    </fieldset>
+                    <fieldset class="container-fluid">
+                        <label class="row" for="message">Message</label>
+                        <textarea class="row" id="message" placeholder="Type Here...."></textarea>
+                    </fieldset>
+                    <fieldset class="container-fluid p-0">
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+                <p class="mb-2">Email- tamilselvanp2045@gmail.com</p>
+                <p>Whatsapp - 8072855197</p>
+            </div>
+        </div>
+    </section>
+    <footer class="container-fluid">
+        <div class="m-1 p-2 row row-cols-1 row-cols-md-2">
+            <div class="col">
+                <div class="name-div">
+                    <h5 class="name p-2">Tamilselvan</h5>
+                </div>
+                <p>Copyright © 2024 Tamilselvan. <br>
+                    All rights reserved.</p>
+            </div>
+            <div class="col social-media">
+                <a href="https://www.linkedin.com/in/tamilselvan-p-39b43b200/">Linkedin</a>
+                <a href="mailto:tamilselvanp2045@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function showmenu() {
+            const content = document.getElementById('menu-content');
+            const close_button = document.getElementById('close-icon');
+            const menu_content=document.getElementById('menu-icon-content');
+            if (content.style.display === "none") {
+                content.style.display = "block";
+                close_button.style.display = "block";
+                menu_content.style.display = "none";
+            }
+            else {
+                content.style.display = "none";
+                close_button.style.display = "none";
+                menu_content.style.display = "block";
+            }
+        }
+        window.addEventListener('resize', function () {
+            const menuContent_1 = document.getElementById('menu-content');
+            const Close_button_1 = document.getElementById('close-icon');
+            const Menu_content_1=document.getElementById('menu-icon-content');
+            if (window.innerWidth > 600) {
+                menuContent_1.style.display = 'none';
+            }
+            if(window.innerWidth<600){
+                Close_button_1.style.display = "none";
+                Menu_content_1.style.display = "block";
+            }
+        });
+    </script>
+</body>
+
+</html>
